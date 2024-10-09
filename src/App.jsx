@@ -70,7 +70,7 @@ function App() {
                   variant="primary"
                   onClick={() => updateTask(index, prompt("Update task"))}
                 >
-                  <Trash size={12} />
+                  <PencilSimpleLine size={12} />
                 </Button>
                 <Button variant="danger" onClick={() => removeTask(index)}>
                   <Trash size={12} />
