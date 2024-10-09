@@ -53,7 +53,7 @@ function App() {
           onChange={(e) => setInputValue(e.target.value)}
           className="rounded-lg px-4 border border-slate-400"
         />
-        <Button variant="blue" onClick={addTask}>
+        <Button variant="primary" onClick={addTask}>
           add
         </Button>
       </div>
@@ -67,12 +67,12 @@ function App() {
               {/* button  */}
               <div className="flex gap-1 ml-auto">
                 <Button
-                  variant="blue"
+                  variant="primary"
                   onClick={() => updateTask(index, prompt("Update task"))}
                 >
                   <Trash size={12} />
                 </Button>
-                <Button variant="red" onClick={() => removeTask(index)}>
+                <Button variant="danger" onClick={() => removeTask(index)}>
                   <Trash size={12} />
                 </Button>
               </div>
